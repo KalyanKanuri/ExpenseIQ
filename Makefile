@@ -16,7 +16,7 @@ GOFMT=$(GOCMD) fmt
 DOCKER=docker
 DOCKER_COMPOSE_CMD=docker-compose
 
-DB_PATH=./Backend/data/budgetgo.db
+DB_PATH=./Backend/database/expenseiq.db
 
 .PHONY: all build test clean run docker-build docker-run docker-stop help fmt lint migrate-up migrate-down
 
@@ -123,7 +123,7 @@ lint-frontend:
 # Database initialization
 init-db:
 	@echo "Initializing database directory..."
-	mkdir -p $(Backend_DIR)/database
+	touch $(DB_PATH)
 
 migrate-up:
 	@echo "Running database migrations up..."
