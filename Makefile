@@ -2,7 +2,7 @@
 BINARY_NAME=expenseiq
 Backend_DIR=./Backend
 FRONTEND_DIR=./Frontend
-DOCKER_COMPOSE=docker-compose.yml
+DOCKER_COMPOSE=docker-compose.yaml
 
 # Go commands
 GOCMD=go
