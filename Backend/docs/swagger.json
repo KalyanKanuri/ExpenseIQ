@@ -1,0 +1,33 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/accounts": {
+            "get": {
+                "description": "Get a list of all existing accounts",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "accounts"
+                ],
+                "summary": "List accounts",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "format": "email",
+                        "description": "name search by q",
+                        "name": "q",
+                        "in": "query"
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    }
+}

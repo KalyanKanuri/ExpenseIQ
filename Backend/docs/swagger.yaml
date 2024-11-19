@@ -1,0 +1,21 @@
+info:
+  contact: {}
+paths:
+  /accounts:
+    get:
+      consumes:
+      - application/json
+      description: Get a list of all existing accounts
+      parameters:
+      - description: name search by q
+        format: email
+        in: query
+        name: q
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: List accounts
+      tags:
+      - accounts
+swagger: "2.0"
